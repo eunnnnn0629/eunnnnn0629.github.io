@@ -1,23 +1,29 @@
 <!doctype html>
-<html><meta charset="utf-8"/>
-<style>
-  ul{ list-style:none; margin:0; padding:0; background:#999; overflow:hidden;}
+<html><head><meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+ <title>ㅋㅋ</title>
+ <style>
+   #div_root{margin:auto; width:800px;}
+   #div_top{width:30%;height:100px;background-color: #ffffff;text-align:center;margin-top: -80px;}
+   #div_menu{width:20%;height:300px;float:left;background-color: #819FF7;text-align:left;}
+   #div_con{width:80%;height:300px;float: left; background-size: 100%100%;text-align: center;}
+
+
+
+
+
+     ul{ list-style:none; width:500px;height:50px; background:#999; padding-left:0px; margin-left: 900px; margin-top: 100px;}
   li { float:left;}
   li a{padding:14px 16px; display:inline-block; text-decoration:none; color:#FFF;}
   li a:hover{background:red;}
-  .content { background:#f9f9f9; position:absolute; min-width:160px; box-shadow:0 8px 15px #CCC; display:none;}
+  .content { background:#ffffff; position:absolute; min-width:160px; box-shadow:0 8px 15px #CCC; display:none;}
   .content a{ display:block; color:#333;}
   .content a:hover { background:#ccc;}
   .dropdown:hover .content{ display:block;} 
+ </style>
+ <body>
   
-  </style>
-  <head>
-    <title>홈페이지 과제</title>
-  </head>
-
-<body>
-  <img src="./icon.png" alt="My Image">
-  <ul>
+     <ul>
     <li class="dropdown">
       <a href="#" class="dropbtn">수강과목</a>
       <div class="content">
@@ -43,5 +49,12 @@
       </div>
           <li><a href="#">경진대회 정보</a></li>
   </ul>
-</body>
+   <div id="div_root">
+     <div id="div_top"><img src="./icon.png" alt="icon">   최은혁의 홈페이지</div>
+     <div id="div_menu">20151464<br>최은혁<br>1996년 6월 29일
+     </div>
+     <div id="div_con">내용</div>
+     <div id="div_bottom">마무리</div>
+   </div>
+ </body>
 </html>
