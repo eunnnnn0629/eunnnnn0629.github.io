@@ -14,11 +14,11 @@
 
 
  #gnb{ background:#333; width:900px; height:40px; line-height:40px; margin:0 auto;position:relative;z-index:2}
-  #gnb ul li{ float:left; width:200px; color:#fff; text-align:center; }
-  #gnb ul li a{ color:#fff; font-weight:bold; display:block; }
+  #gnb ul li{ float:left; width:200px; color:#fff; text-align:center; list-style-type : none }
+  #gnb ul li a{ color:#fff; font-weight:bold; font-weight:bold; display:block; }
   #gnb ul li a:hover{ background:#666; }
   #gnb ul li dl.dropdown{ border:3px #ccc solid; background:#FFC; display:none; }
-  #gnb ul li dl.dropdown dd{height:30px; line-height:30px; border-bottom:1px #ccc solid; }
+  #gnb ul li dl.dropdown dd{height:30px; line-height:30px; }
   #gnb ul li dl.dropdown a{ color:#333;  padding:0 5px; }
   #gnb ul li dl.dropdown a:hover{ background:#F60; color:#fff; }
   
@@ -33,19 +33,31 @@
 
 
 
-   <div id="newheader"><img src="./icon.png" alt="icon" width="80" height="80">최은혁의 홈페이지</div>
+   <div id="newheader"><img src="./iconn.png" alt="icon" width="50" height="50">최은혁의 홈페이지</div>
       <div id="header">
   <div id="gnb">
   <ul>
-   <li class="menu1"><a href="menu1.html">메뉴 1</a></li>
-   <li class="menu2"><a href="menu2.html">메뉴 2</a></li>
    <li class="menu3">
-    <a href="">메뉴 3</a>
+    <a href="">수강과목</a>
     <dl class="dropdown">
-     <dd><a href="menu4.html">하위메뉴1</a></dd>
-     <dd><a href="menu5.html">하위메뉴2</a></dd>
-     <dd><a href="menu6.html">하위메뉴3</a></dd>
+     <dd><a href="anchor1.html">3학년1학기</a></dd>
+     <dd><a href="menu5.html">3학년2학기</a></dd>
+     <dd><a href="menu6.html">4학년1학기</a></dd>
     </dl>
+       <li class="menu3">
+    <a href="">프로젝트 수행내역</a>
+    <dl class="dropdown">
+     <dd><a href="anchor1.html">인터넷응용</a></dd>
+     <dd><a href="menu5.html">캡스톤디자인</a></dd>
+     <dd><a href="menu6.html">개인프로젝트</a></dd>
+    </dl>
+       <li class="menu3">
+    <a href="">자격증</a>
+    <dl class="dropdown">
+     <dd><a href="anchor1.html">현재보유중</a></dd>
+     <dd><a href="menu5.html">준비중인자격증</a></dd>
+    </dl>
+       <li class="anchor1"><a href="anchor1.html">경진대회 정보</a></li>
    </li>
   </ul>
  </div>
