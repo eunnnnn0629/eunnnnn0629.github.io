@@ -3,58 +3,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
  <title>ㅋㅋ</title>
  <style>
-   #div_root{margin:auto; width:800px;}
-   #div_top{width:30%;height:100px;background-color: #82FA58;text-align:center;margin-top: -80px;}
-   #div_menu{width:20%;height:300px;float:left;background-color: #819FF7;text-align:left;}
-   #div_con{width:80%;height:300px;float: left; background-size: 100%100%;text-align: center;}
+#wrap{width:1000px; height:800px; background:white;}
+#header{width:600px; height:100px; margin-left:50px; margin-bottom:10px; background:white;float:left;}
+#middle{width:1000px; float:left; background:white;}
+#sidebar{width:200px;height:500px; float:left; margin-left:50px; margin-right:10px; background:gray;}
+#content{width:700px; height:500px;float:left; background:white;position:relative;z-index:1}
+#footer{width:900px; height:130px; float:left; margin-left:50px; margin-top:10px; background:orange;}
+#newheader{width:200px; height:100px; margin-left:50px; margin-bottom:10px; background:white;float:left;}
 
 
 
-
-
-     ul{ list-style:none; width:500px;height:50px; background:#999; padding-left:0px; margin-left: 900px; margin-top: 100px;}
-  li { float:left;}
-  li a{padding:14px 16px; display:inline-block; text-decoration:none; color:#FFF;}
-  li a:hover{background:red;}
-  .content { background:#f9f9f9; position:absolute; min-width:160px; box-shadow:0 8px 15px #CCC; display:none;}
-  .content a{ display:block; color:#333;}
-  .content a:hover { background:#ccc;}
-  .dropdown:hover .content{ display:block;} 
- </style>
- <body>
+ #gnb{ background:#333; width:900px; height:40px; line-height:40px; margin:0 auto;position:relative;z-index:2}
+  #gnb ul li{ float:left; width:200px; color:#fff; text-align:center; }
+  #gnb ul li a{ color:#fff; font-weight:bold; display:block; }
+  #gnb ul li a:hover{ background:#666; }
+  #gnb ul li dl.dropdown{ border:3px #ccc solid; background:#FFC; display:none; }
+  #gnb ul li dl.dropdown dd{height:30px; line-height:30px; border-bottom:1px #ccc solid; }
+  #gnb ul li dl.dropdown a{ color:#333;  padding:0 5px; }
+  #gnb ul li dl.dropdown a:hover{ background:#F60; color:#fff; }
   
-     <ul>
-    <li class="dropdown">
-      <a href="#" class="dropbtn">수강과목</a>
-      <div class="content">
-        <a href="#">3학년1학기</a>
-        <a href="#">3학년2학기</a>
-        <a href="#">4학년1학기</a>
-      </li>
-      </div>
-          <li class="dropdown">
-      <a href="#" class="dropbtn">프로젝트 수행내역</a>
-      <div class="content">
-        <a href="#">인터넷응용</a>
-        <a href="#">캡스톤디자인</a>
-        <a href="#">개인프로젝트</a>
-      </li>
-      </div>
-          <li class="dropdown">
-      <a href="#" class="dropbtn">자격증</a>
-      <div class="content">
-        <a href="#">현재보유</a>
-        <a href="#">준비중인 자격증</a>
-      </li>
-      </div>
-          <li><a href="#">경진대회 정보</a></li>
+  #gnb ul li.menu3:hover .dropdown{ display:block; }
+
+
+ </style>
+<body>
+
+
+<div id="wrap">
+
+
+
+   <div id="newheader"><img src="./icon.png" alt="icon">최은혁의 홈페이지</div>
+      <div id="header">
+  <div id="gnb">
+  <ul>
+   <li class="menu1"><a href="menu1.html">메뉴 1</a></li>
+   <li class="menu2"><a href="menu2.html">메뉴 2</a></li>
+   <li class="menu3">
+    <a href="">메뉴 3</a>
+    <dl class="dropdown">
+     <dd><a href="menu4.html">하위메뉴1</a></dd>
+     <dd><a href="menu5.html">하위메뉴2</a></dd>
+     <dd><a href="menu6.html">하위메뉴3</a></dd>
+    </dl>
+   </li>
   </ul>
-   <div id="div_root">
-     <div id="div_top"><img src="./icon.png" alt="icon">   최은혁의 홈페이지</div>
-     <div id="div_menu">20151464<br>최은혁<br>1996년 6월 29일
-     </div>
-     <div id="div_con">내용</div>
-     <div id="div_bottom">마무리</div>
+ </div>
+
+      </div>
+
+   <div id="middle">
+       <div id="sidebar">20151464<br>최은혁<br>1996년 6월 29일</div>
+       <div id="content">content</div>
    </div>
- </body>
-</html>
+   <div id="footer">footer</div>
+
+
+
+
+</div>
