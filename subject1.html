@@ -1,29 +1,145 @@
-<!doctype html>	<!-- subjectTable1.html-->
-<html lang="ko">
-	<head>
-		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<style>
-	table,thead,tbody,tfoot,tr,th,td{border:2px solid black; border-collapse:collapse;text-align: center;}
-	.subject1{background-color: lightgray;} .subject2{background-color:#FAF4C0;}.subject3{background-color:#ED1C24;}
-	th,td{width:50px;}
-</style>
-<title>HTML5 시간표</title></head>
+<!doctype >
+<html><head><meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+ <title>ㅋㅋ</title>
+ <style>
+#wrap{width:1000px; height:800px; background:white;}
+#header{width:600px; height:100px; margin-left:50px; margin-bottom:10px; background:white;float:left;}
+#middle{width:1000px; float:left; background:white;}
+#sidebar{width:200px;height:300px; float:left; margin-left:50px; margin-right:10px; background:#acd1e6;border:1px solid gold;text-align: center;line-height:300%}
+#content{width:700px; height:500px;float:left; background:white;position:relative;z-index:1}
+#newheader{width:200px; height:100px; margin-left:50px; margin-top:10px; background:white;float:left;font-size:27px;}
+ #gnb{ background:#bc41ea; width:900px; height:40px; line-height:40px; margin:0 auto;position:relative;z-index:2}
+  #gnb ul li{ float:left; width:200px; color:#fff; text-align:center; list-style-type : none }
+  #gnb ul li a{ color:#fff; font-weight:bold; font-weight:bold; display:block;  text-decoration: none;}
+  #gnb ul li a:hover{ background:#cf41d9; }
+  #gnb ul li dl.dropdown{ border:3px #b37699 solid; background:#fbb1bb; display:none; }
+  #gnb ul li dl.dropdown dd{height:30px; line-height:30px; }
+  #gnb ul li dl.dropdown a{ color:#333;  padding:0 5px; }
+  #gnb ul li dl.dropdown a:hover{ background:#F60; color:#fff; }
+  #gnb ul li.menu3:hover .dropdown{ display:block; }
+
+
+
+
+table, th, td {border: 1px solid black;border-collapse: collapse;
+text-align: center;
+width : 100px;
+height: 40px;}
+th, td {padding: 20px;}
+th {text-align: center;}
+
+ </style>
 <body>
-	<table><caption>&lt;표 1&gt;시간표</caption>
-	<thead>
-		<tr><th>시간</th><th>월</th>         <th>화</th><th>수</th><th>목</th><th>금</th></tr>
-	</thead>
-	<tbody>
-		<tr><td>1교시</td><td rowspan="2"class="subjext3">이산수학</td><td rowspan="2"class="subjext2">자료구조</td><td rowspan="1"class="subjext2">이산수학</td>          <td></td><td ></td></tr>
-		<tr><td>2교시</td><td></td>         <td></td> <td></td>                       </tr>
-		<tr><td>3교시</td><td></td><td></td><td rowspan="2"class="subjext2" >자료구조</td><td></td><td></td></tr>
-		<tr><td>4교시</td>                   <td></td><td></td><td rowspan="2"class="subjext2">캡스톤디자인</td><td></td></tr>
-		<tr><td>5교시</td>                   <td></td><td rowspan="1"class="subjext2">운영체제</td><td rowspan="1"class="subjext2">캡스톤디자인</td><td></td></tr>
-    <tr><td>6교시</td><td></td>          <td></td><td></td><td></td><td></td></tr>
-    <tr><td>7교시</td><td></td>          <td></td><td rowspan="2"class="subjext2">인터넷 응용</td><td></td><td></td></tr>
-    <tr><td>8교시</td><td rowspan="2"class="subjext2">운영체제</td>          <td></td><td></td><td></td></tr>
-    <tr><td>9교시</td><td></td>          <td></td><td></td><td rowspan="1"class="subjext2">인터넷 응용</td></tr>
-		
-    </tbody>
-</table></body></html>
+
+
+<div id="wrap">
+
+
+
+<div id="newheader"><a href="https://eunnnnn0629.github.io/homepage/20151464.html"> <img src="./icon.png" alt="icon" width="225" height="83" align="left"></div>
+      <div id="header">
+  <div id="gnb">
+  <ul>
+   <li class="menu3">
+    <a href="">수강과목</a>
+    <dl class="dropdown">
+     <dt><a href="anchor1.html">3학년1학기</a></dt>
+     <dt><a href="menu5.html">3학년2학기</a></dt>
+     <dt><a href="https://eunnnnn0629.github.io/subject1.html">4학년1학기</a></dt>
+    </dl>
+       <li class="menu3">
+    <a href="">프로젝트 수행내역</a>
+    <dl class="dropdown">
+     <dt><a href="anchor1.html">인터넷응용</a></dt>
+     <dt><a href="menu5.html">캡스톤디자인</a></dt>
+     <dt><a href="menu6.html">개인프로젝트</a></dt>
+    </dl>
+       <li class="menu3">
+    <a href="">자격증</a>
+    <dl class="dropdown">
+     <dt><a href="anchor1.html">현재보유중</a></dt>
+     <dt><a href="menu5.html">준비중인자격증</a></dt>
+    </dl>
+       <li class="anchor1"><a href="anchor1.html">경진대회 정보</a></li>
+   </li>
+  </ul>
+ </div>
+
+      </div>
+   <div id="middle">
+      <div id="sidebar">20151464<br>최은혁<br>1996년 6월 29일</div>
+       <div id="content">
+
+
+
+
+
+
+
+
+
+	<table style="width:80%";>
+ <caption><4학년1학기> 시간표</caption>
+  <tr>
+    <th> </th>
+    <th>월</th>
+    <th>화</th>
+    <th>수</th>
+    <th>목</th>
+    <th>금</th>
+  </tr>
+    <tr>
+    <th>1교시</th>
+    <td style = "background : Plum  ;">문화와 역사2</td>
+    <td> </td>
+    <td style = "background : LavenderBlush ;"rowspan="2">정보통신융합공학개론</td>
+    <td style = "background : Pink ;" rowspan="2">화일구조</td>
+    <td style = "background : LightGoldenRodYellow;" rowspan="2">참삶의길</td>
+   </tr>
+    <tr>
+    <th>2교시</th>
+    <td> </td>
+    <td> </td>
+  </tr>
+    <tr>
+    <th>3교시</th>
+    <td> </td>
+    <td> </td>
+    <td style = "background : LightCyan  ;" rowspan="2">프로그래밍언어구조론</td>
+    <td style = "background : Lavender;" rowspan="2">웹/xml프로그래밍</td>
+    <td> </td>
+  </tr>
+   <tr>
+    <th>4교시</th>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <th>5교시</th>
+    <td style = "background : Lavender  ;" rowspan="2">웹/xml프로그래밍</td>
+    <td style = "background : Salmon  ;" rowspan="4">c++ </td>
+    <td style = "background : MintCream  ;" rowspan="4">임베디드프로그래밍실습</td>
+    <td style = "background : Wheat   ;" rowspan="4">리눅스컴퓨팅실무</td>
+    <td> </td>
+  </tr>
+   <tr>
+    <th>6교시</th>
+    <td> </td>
+  </tr>
+   <tr>
+    <th>7교시</th>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+   <th>8교시</th>
+   <td style = "background : LightCyan  ;">프로그래밍언어구조론</td>
+   <td> </td>
+  </tr>
+
+</table>
+
+</body>
+</html
